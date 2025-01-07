@@ -48,17 +48,20 @@ program
   .command("init")
   .description(chalk.magenta("Initialize a new file structure"))
   .action(() => {
-    const yamlPath = "./struct.yml";
+    var yamlPath ="./struct.yml";
+    var jsonPath="./struct.json";
 
-    if (!fs.existsSync(yamlPath)) {
+    if (!fs.existsSync(yamlPath) && !fs.existsSync(jsonPath)) {
       console.error(
         chalk.red.bold(
-          "Error: struct.yml file not found in the current directory."
+          "Error: struct.yml/struct.json file not found in the current directory."
         )
       );
       process.exit(1);
     }
-
+    if(fs.existsSync(jsonPath)){
+      yamlPath=jsonPath;
+    }
     console.log(chalk.blue.bold("\nInitializing file structure...\n"));
 
     inquirer

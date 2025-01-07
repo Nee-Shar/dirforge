@@ -38,6 +38,46 @@ project:
   - file4.txt
 ```
 
+From now onwards , JSON struct is also supported for struct.json files , similar to yml it now can work on either of 
+struct.json or struct.yaml file at root . Here's an example of struct.json file:
+
+```json
+{
+  "project": [
+    {
+      "folder1": [
+        "file1.txt",
+        "file2.txt"
+      ]
+    },
+    {
+      "folder2": [
+        "file3.txt",
+        {
+          "folder3": [
+            "file5.txt"
+          ]
+        }
+      ]
+    },
+    {
+      "folder4": [
+        "file3.txt",
+        {
+          "folder5": [
+            "hello.cpp"
+          ]
+        }
+      ]
+    },
+    "file4.txt"
+  ]
+}
+```
+
+
+
+
 It by default creates the files at root directory of the project. If you want to create the files at a specific directory, you can specify the path in the innit command.
 
 Currently only one command is supported. More commands will be added in the future.
