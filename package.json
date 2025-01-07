@@ -1,10 +1,10 @@
 {
-  "name": "structron",
+  "name": "dirforge",
   "version": "1.0.0",
   "main": "bin/index.js",
   "type": "module",
   "bin": {
-    "structron": "./bin/index.js"
+    "dirforge": "./bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

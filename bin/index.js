@@ -32,12 +32,12 @@ function createStructure(structure, basePath) {
 }
 
 program
-  .name(chalk.bold.cyan("structron"))
+  .name(chalk.bold.cyan("dirforge"))
   .description(
     chalk.yellow(
       "A CLI tool to create file directory structures from a YAML file.\n" +
         "Add a struct.yml file in the root directory and run " +
-        chalk.cyan("'structron init'") +
+        chalk.cyan("'dirforge init'") +
         " to create the entire file structure."
     )
   )

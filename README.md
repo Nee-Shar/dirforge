@@ -1,22 +1,22 @@
-## Structron
+## Dirforge
 
-Structron is a simple, lightweight, and easy-to-use Javascript package used for creating file structures. It is designed to be used in Node.js applications. It offers simple and intuitive methods for creating directories and files.
+Dirforge is a simple, lightweight, and easy-to-use Javascript package used for creating file structures. It is designed to be used in Node.js applications. It offers simple and intuitive methods for creating directories and files.
 
 ## Installation
 
-To install Structron, you can use npm. Run the following command:
+To install Dirforge, you can use npm. Run the following command:
 
 ```bash
-npm install structron
+npm install dirforge
 ```
 
 ## Usage
 
-To use Structron, you need to run the following code:
+To use dirforge, you need to run the following code:
 
 ```bash
 
-structron init
+dirforge init
 
 ```
 
@@ -48,4 +48,4 @@ Currently only one command is supported. More commands will be added in the futu
 
 ## Contributing
 
-To contribute to Structron open a pull request. Make sure to write all the neccssary comments for the code you write. And also make sure to test the code locally before opening a pull request.
+To contribute to dirforge open a pull request. Make sure to write all the neccssary comments for the code you write. And also make sure to test the code locally before opening a pull request.
