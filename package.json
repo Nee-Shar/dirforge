@@ -1,19 +1,20 @@
 {
-  "name": "file-structure",
+  "name": "structron",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "bin/index.js",
   "type": "module",
   "bin": {
-    "mystruct": "./index.js"
+    "structron": "./bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node bin/index.js"
   },
   "author": "Nee-Shar",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
+  "description": "A simple CLI tool to generate project file structure from a yaml file",
   "dependencies": {
+    "chalk": "^5.4.1",
     "commander": "^13.0.0",
     "fs-extra": "^11.2.0",
     "inquirer": "^12.3.0",

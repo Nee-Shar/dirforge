@@ -6,7 +6,9 @@ project:
       - file3.txt
       - folder3:
           - file5.txt
-
-  - folder2:
+  - folder4:
       - file3.txt
+      - folder5:
+          - hello.cpp
   - file4.txt
+
