@@ -1,0 +1,12 @@
+project:
+  - folder1:
+      - file1.txt
+      - file2.txt
+  - folder2:
+      - file3.txt
+      - folder3:
+          - file5.txt
+
+  - folder2:
+      - file3.txt
+  - file4.txt
