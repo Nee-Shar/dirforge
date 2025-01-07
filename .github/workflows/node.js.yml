@@ -12,22 +12,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [16, 18]  # Set up a matrix for different Node.js versions
-
+   
     steps:
     # Step 1: Checkout the code
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     # Step 2: Set up Node.js environment
-    - name: Set up Node.js ${{ matrix.node-version }}
+    - name: Set up Node.js 18
       uses: actions/setup-node@v2
       with:
-        node-version: ${{ matrix.node-version }}
-        registry-url: https://registry.npmjs.org/  # Set npm registry URL for publishing
-
+        node-version: 18
+     
     # Step 3: Install dependencies
     - name: Install dependencies
       run: npm install
